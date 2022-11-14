@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #0b1c51;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 52px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 20 px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex; /* Sets unorder list in one single row, this is the default value for flex, no need for flex direction */
+    padding-left: 0;
+    list-style: none; /* Removes bullet points from list items in unordered list*/
+}
+
+header nav ul li a {
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none; /* removes the underline from anchor tags*/
+    margin: 0 20px 0 0; /*applies 20 px of space to right of each anchor tag list item*/
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+/* Desktop Version */
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin: 14px 0;
+        padding-top: 0;
+      }
+    
+      header nav {
+        margin-top: 8px;
+      }
+    
+      header nav ul li a:hover {
+        color: #bdbdbd;
+      }
+}
